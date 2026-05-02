@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Golden Paws Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            padding: 140px 0 80px;
+            text-align: center;
+            background: linear-gradient(rgba(253, 251, 247, 0.9), rgba(253, 251, 247, 0.9)), url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=2071&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .mv-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .team-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .mission-vision, .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    Golden<span>Paws</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>Our Story</h1>
+                <p>Caring for Colombo's pets since 2022.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2>Established in 2022</h2>
+                <p style="font-size: 1.1rem; margin-top: 20px;">Golden Paws Pet Shop is a modern family-owned pet store located in Colombo, Sri Lanka. Founded with a passion for animal welfare, we specialize in premium pet food, accessories, toys, and grooming products. We believe every pet deserves the best care at affordable prices.</p>
+            </div>
+
+            <div class="mission-vision">
+                <div class="mv-card">
+                    <h3>Our Mission</h3>
+                    <p>To provide pet owners with high-quality, safe, and effective products that enhance the lives of their animal companions.</p>
+                </div>
+                <div class="mv-card">
+                    <h3>Our Vision</h3>
+                    <p>To be Sri Lanka's leading pet care destination, known for our expertise, friendly service, and commitment to pet health.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--white);">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Meet Our Team</h2>
+                    <p>The dedicated animal lovers behind Golden Paws.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="CEO">
+                        <h3>Nalin Perera</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Founder & CEO</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Pet Specialist">
+                        <h3>Priyanthi Silva</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Senior Pet Specialist</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="Store Manager">
+                        <h3>David Raj</h3>
+                        <p style="color: var(--accent-color); font-weight: 600;">Store Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Golden<span>Paws</span></h3>
+                    <p>Established in 2022, we are dedicated to providing the best pet care products in Colombo. Caring for your pets like family is our passion.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>+94 77 456 7890</li>
+                        <li>info@goldenpawspetshop.com</li>
+                        <li>25 Flower Road, Colombo 07</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <ul class="nav-links" style="flex-direction: column; gap: 10px;">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Golden Paws Pet Shop. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
